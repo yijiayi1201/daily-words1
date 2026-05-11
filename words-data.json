@@ -1,0 +1,52 @@
+{
+  "date": "2026-05-11",
+  "theme": "职场影响力与表达",
+  "group": 42,
+  "words": [
+    {
+      "en": "credibility",
+      "phonetic": "/ˌkredəˈbɪlɪti/",
+      "pos": "n.",
+      "meaning": "可信度；公信力；信誉",
+      "example": "Consistently delivering results builds your credibility at work.",
+      "example_zh": "持续交付成果能在职场中建立你的公信力。",
+      "tip": "\"credit\"（信用）的延伸 → credit → credibility → 值得被信任的能力 → 公信力"
+    },
+    {
+      "en": "constructive",
+      "phonetic": "/kənˈstrʌktɪv/",
+      "pos": "adj.",
+      "meaning": "建设性的；有益的",
+      "example": "Please give constructive feedback, not just criticism.",
+      "example_zh": "请给出建设性的意见，而不只是批评。",
+      "tip": "\"construct\"（建造）+ -ive → 像在建造东西一样 → 建设性的"
+    },
+    {
+      "en": "influence",
+      "phonetic": "/ˈɪnfluəns/",
+      "pos": "n./v.",
+      "meaning": "影响；影响力；左右",
+      "example": "Your attitude can greatly influence the team's morale.",
+      "example_zh": "你的态度能极大地影响团队士气。",
+      "tip": "\"in-\"（进入）+ \"flu\"（流动）→ 流进去 → 潜移默化地影响"
+    },
+    {
+      "en": "engaged",
+      "phonetic": "/ɪnˈɡeɪdʒd/",
+      "pos": "adj.",
+      "meaning": "积极投入的；参与其中的",
+      "example": "Employees who feel engaged are far more productive.",
+      "example_zh": "感到投入的员工效率高得多。",
+      "tip": "\"engage\"（接触、参与）→ engaged = 已经投入进去了 → 积极投入的"
+    },
+    {
+      "en": "mutual",
+      "phonetic": "/ˈmjuːtʃuəl/",
+      "pos": "adj.",
+      "meaning": "相互的；共同的",
+      "example": "Successful collaboration is built on mutual respect and trust.",
+      "example_zh": "成功的合作建立在相互尊重与信任之上。",
+      "tip": "谐音\"妙喱\" → 两人都觉得妙 → 互相的、共同的"
+    }
+  ]
+}

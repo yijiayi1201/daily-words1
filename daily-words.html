@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🧽 RUI的每日英语</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: linear-gradient(135deg, #f5f0ff 0%, #fdf0f8 50%, #f0f8ff 100%);
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .header {
+    text-align: center;
+    padding: 30px 0 20px;
+  }
+  .header h1 {
+    font-size: 2rem;
+    color: #7c3aed;
+    margin-bottom: 6px;
+  }
+  .header p {
+    color: #a78bfa;
+    font-size: 0.95rem;
+  }
+  .date-badge {
+    display: inline-block;
+    background: #ede9fe;
+    color: #7c3aed;
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 0.85rem;
+    margin-top: 8px;
+  }
+
+  /* ===== SCHULTE SECTION ===== */
+  .puzzle-section {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+  .puzzle-title {
+    font-size: 1.1rem;
+    color: #6d28d9;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .puzzle-subtitle {
+    font-size: 0.85rem;
+    color: #a78bfa;
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  .puzzle-container {
+    display: inline-block;
+    background: white;
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 0 8px 32px rgba(124,58,237,0.15);
+    position: relative;
+  }
+
+  .puzzle-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 78px);
+    grid-template-rows: repeat(4, 78px);
+    gap: 6px;
+    user-select: none;
+  }
+
+  /* 卡片翻转容器 */
+  .card-wrap {
+    width: 78px;
+    height: 78px;
+    perspective: 600px;
+    cursor: pointer;
+  }
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.45s cubic-bezier(.4,0,.2,1);
+    border-radius: 12px;
+  }
+  .card-wrap.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* 正面（背面朝上时显示的花背） */
+  .card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    box-shadow: inset 0 0 0 2px rgba(255,255,255,0.25);
+    transition: background 0.2s;
+  }
+  .card-wrap:hover:not(.flipped):not(.locked-card) .card-front {
+    background: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 100%);
+    transform: scale(1.04);
+  }
+  /* 反面（翻开后显示数字） */
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #4c1d95;
+    background: #f5f3ff;
+    border: 2px solid #a78bfa;
+  }
+  /* 翻开已确认的牌 */
+  .card-wrap.confirmed .card-back {
+    background: linear-gradient(135deg, #ede9fe, #fce7f3);
+    border-color: #7c3aed;
+    color: #6d28d9;
+  }
+  /* 翻开但未确认的临时牌（等待下一步） */
+  .card-wrap.flipped:not(.confirmed) .card-back {
+    background: #fff7ed;
+    border-color: #f59e0b;
+    color: #92400e;
+  }
+  /* 翻错时的抖动动画 */
+  .card-wrap.wrong .card-inner {
+    animation: shake 0.4s ease;
+  }
+  @keyframes shake {
+    0%,100% { transform: rotateY(180deg) translateX(0); }
+    25% { transform: rotateY(180deg) translateX(-6px); }
+    75% { transform: rotateY(180deg) translateX(6px); }
+  }
+  /* 已锁定/已确认不可再点 */
+  .card-wrap.locked-card { cursor: default; }
+
+  /* 当前目标提示 */
+  .target-hint {
+    margin-top: 14px;
+    font-size: 0.9rem;
+    color: #6d28d9;
+    font-weight: 600;
+    min-height: 1.4em;
+  }
+  .target-hint span {
+    display: inline-block;
+    background: #ede9fe;
+    border-radius: 20px;
+    padding: 3px 14px;
+  }
+
+  .progress-bar-wrap {
+    margin-top: 12px;
+    background: #ede9fe;
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+  }
+  .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #a78bfa, #7c3aed);
+    border-radius: 10px;
+    width: 0%;
+    transition: width 0.5s ease;
+  }
+  .progress-text {
+    font-size: 0.82rem;
+    color: #8b5cf6;
+    margin-top: 6px;
+  }
+
+  .puzzle-complete-msg {
+    display: none;
+    margin-top: 12px;
+    background: linear-gradient(135deg, #ede9fe, #fce7f3);
+    border-radius: 12px;
+    padding: 12px 20px;
+    color: #7c3aed;
+    font-weight: 600;
+    font-size: 1rem;
+    animation: popIn 0.4s ease;
+  }
+  @keyframes popIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  /* Reset button */
+  .btn-shuffle {
+    margin-top: 12px;
+    padding: 8px 22px;
+    background: white;
+    border: 2px solid #c4b5fd;
+    border-radius: 20px;
+    color: #7c3aed;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-shuffle:hover { background: #f5f3ff; border-color: #7c3aed; }
+
+  /* ===== WORDS SECTION ===== */
+  .words-section {
+    max-width: 700px;
+    margin: 0 auto;
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  .words-section.locked {
+    opacity: 0.3;
+    filter: blur(4px);
+    pointer-events: none;
+    transform: translateY(10px);
+  }
+
+  .lock-hint {
+    text-align: center;
+    color: #a78bfa;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .lock-hint.hidden { display: none; }
+
+  .section-title {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6d28d9;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .word-card {
+    background: white;
+    border-radius: 18px;
+    padding: 22px 26px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 20px rgba(124,58,237,0.08);
+    border-left: 4px solid #a78bfa;
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: slideUp 0.4s ease both;
+  }
+  .word-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(124,58,237,0.14); }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .word-card:nth-child(1) { animation-delay: 0.1s; }
+  .word-card:nth-child(2) { animation-delay: 0.2s; }
+  .word-card:nth-child(3) { animation-delay: 0.3s; }
+  .word-card:nth-child(4) { animation-delay: 0.4s; }
+  .word-card:nth-child(5) { animation-delay: 0.5s; }
+
+  .word-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  .word-en {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #4c1d95;
+    letter-spacing: 0.5px;
+  }
+  .word-phonetic {
+    font-size: 0.9rem;
+    color: #8b5cf6;
+    font-family: 'Courier New', monospace;
+    background: #f5f3ff;
+    padding: 2px 8px;
+    border-radius: 8px;
+  }
+  .word-pos {
+    font-size: 0.78rem;
+    background: #fce7f3;
+    color: #be185d;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+
+  .word-meaning {
+    font-size: 1rem;
+    color: #374151;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  .word-meaning strong { color: #6d28d9; }
+
+  .word-example {
+    background: #f8f7ff;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    border-left: 3px solid #c4b5fd;
+  }
+  .word-example .en { font-style: italic; color: #374151; }
+  .word-example .zh { color: #6b7280; font-size: 0.85rem; margin-top: 4px; }
+
+  .word-tip {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    background: linear-gradient(135deg, #fef3c7, #fde68a22);
+    border-radius: 10px;
+    padding: 9px 13px;
+    font-size: 0.88rem;
+    color: #92400e;
+  }
+  .word-tip .tip-icon { font-size: 1rem; flex-shrink: 0; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 30px 0 20px;
+    color: #c4b5fd;
+    font-size: 0.82rem;
+  }
+  .footer span { color: #a78bfa; }
+
+  /* Rabbit SVG face */
+  .rabbit-face {
+    font-size: 2.2rem;
+    line-height: 1;
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🧽 RUI的每日英语</h1>
+  <p>先完成拼图，再解锁今日单词</p>
+  <div class="date-badge" id="dateBadge">📅 加载中…</div>
+</div>
+
+<!-- SCHULTE TABLE SECTION -->
+<div class="puzzle-section">
+  <div class="puzzle-title">🧠 舒尔特记忆挑战</div>
+  <div class="puzzle-subtitle">
+    按 <strong>1 → 16</strong> 的顺序依次点开数字牌<br>
+    顺序错了会复原，全部翻开解锁今日单词 🔓
+  </div>
+
+  <div class="puzzle-container">
+    <div class="puzzle-grid" id="puzzleGrid"></div>
+    <div class="target-hint" id="targetHint">
+      <span>👆 找到数字 <strong id="targetNum">1</strong> 并点击它</span>
+    </div>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div class="progress-text" id="progressText">已找到 0 / 16</div>
+    <div class="puzzle-complete-msg" id="completeMsg">
+      🎉 全部找到啦！今日单词已解锁 👇
+    </div>
+    <div>
+      <button class="btn-shuffle" onclick="resetGame()">🔀 重新打乱</button>
+    </div>
+  </div>
+</div>
+
+<!-- LOCK HINT -->
+<div class="lock-hint" id="lockHint">
+  🔒 完成上方拼图后解锁今日单词
+</div>
+
+<!-- WORDS SECTION -->
+<div class="words-section locked" id="wordsSection">
+  <div class="section-title" id="wordsTitle">📖 今日 5 个精选单词</div>
+  <div id="wordsList"></div>
+</div>
+
+<div class="footer">
+  <span>🧽 RUI的每日英语</span> 每天一组，坚持才有效果 ✨
+</div>
+
+<script>
+// ===== 动态日期 =====
+(function() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = now.getMonth() + 1;
+  const day = now.getDate();
+  const weekDays = ['日', '一', '二', '三', '四', '五', '六'];
+  const weekDay = weekDays[now.getDay()];
+  document.getElementById('dateBadge').textContent =
+    `📅 ${year}年${month}月${day}日 · 星期${weekDay}`;
+})();
+
+// ===== 加载今日单词 =====
+async function loadTodayWords() {
+  try {
+    const resp = await fetch('./words-data.json');
+    if (!resp.ok) throw new Error('Network response was not ok');
+    const data = await resp.json();
+
+    // 对比日期
+    const today = new Date();
+    const todayStr = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+
+    if (data.date !== todayStr) {
+      // 日期不匹配，显示提示
+      document.getElementById('wordsTitle').textContent = '📖 单词加载失败';
+      document.getElementById('wordsList').innerHTML = `
+        <div class="word-card" style="text-align:center; color:#a78bfa; border-left-color:#c4b5fd;">
+          <p style="margin:0; font-size:0.95rem;">⚠️ 今日单词数据尚未更新</p>
+          <p style="margin:8px 0 0; font-size:0.85rem; color:#92400e;">请等待每日推送任务完成后刷新页面</p>
+        </div>`;
+      return;
+    }
+
+    // 渲染单词
+    document.getElementById('wordsTitle').textContent = `📖 今日 5 词 · ${data.theme}`;
+
+    const container = document.getElementById('wordsList');
+    container.innerHTML = data.words.map(w => `
+      <div class="word-card">
+        <div class="word-header">
+          <span class="word-en">${w.en}</span>
+          <span class="word-phonetic">${w.phonetic}</span>
+          <span class="word-pos">${w.pos}</span>
+        </div>
+        <div class="word-meaning"><strong>${w.meaning}</strong></div>
+        <div class="word-example">
+          <div class="en">${w.example}</div>
+          <div class="zh">${w.example_zh}</div>
+        </div>
+        <div class="word-tip">
+          <span class="tip-icon">💡</span>
+          ${w.tip}
+        </div>
+      </div>`).join('');
+
+    // 存储当前数据供 unlockWords 使用（解锁后显示）
+    window._todayWordsData = data;
+  } catch (e) {
+    console.error('Failed to load words-data.json:', e);
+    document.getElementById('wordsTitle').textContent = '📖 加载失败';
+    document.getElementById('wordsList').innerHTML = `
+      <div class="word-card" style="text-align:center; color:#a78bfa; border-left-color:#c4b5fd;">
+        <p style="margin:0; font-size:0.95rem;">⚠️ 单词数据加载失败</p>
+        <p style="margin:8px 0 0; font-size:0.85rem; color:#92400e;">请检查 words-data.json 文件是否存在</p>
+      </div>`;
+  }
+}
+
+// ===== SCHULTE TABLE MEMORY GAME =====
+// 4×4 grid, numbers 1-16 shuffled
+// Must click in order 1→16; wrong click flips back
+
+const TOTAL = 16;
+let positions = [];      // positions[i] = number shown at cell i (1-based)
+let nextTarget = 1;      // next number to find
+let flippedCell = null;  // index of currently flipped-but-not-confirmed cell
+let confirmed = new Set(); // confirmed (permanently flipped) cell indices
+let gameComplete = false;
+
+// Card face decorations for the back-side (covered state)
+const backEmojis = ['🌸','✨','🎯','🌟','💫','🎨','🔮','🌈',
+                    '🦋','🌺','⭐','🎪','🍀','🎵','🏆','🎠'];
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function initGame() {
+  positions = shuffle(Array.from({length: TOTAL}, (_, i) => i + 1)); // 1..16 shuffled
+  nextTarget = 1;
+  flippedCell = null;
+  confirmed = new Set();
+  gameComplete = false;
+  renderGrid();
+  updateProgress();
+  document.getElementById('completeMsg').style.display = 'none';
+  document.getElementById('targetNum').textContent = 1;
+  document.getElementById('targetHint').style.display = '';
+}
+
+function renderGrid() {
+  const grid = document.getElementById('puzzleGrid');
+  grid.innerHTML = '';
+
+  positions.forEach((num, idx) => {
+    const wrap = document.createElement('div');
+    wrap.className = 'card-wrap';
+    wrap.dataset.idx = idx;
+
+    const inner = document.createElement('div');
+    inner.className = 'card-inner';
+
+    // Front (face-down decoration)
+    const front = document.createElement('div');
+    front.className = 'card-front';
+    front.textContent = backEmojis[(num - 1) % backEmojis.length];
+
+    // Back (face-up number)
+    const back = document.createElement('div');
+    back.className = 'card-back';
+    back.textContent = num;
+
+    inner.appendChild(front);
+    inner.appendChild(back);
+    wrap.appendChild(inner);
+
+    if (confirmed.has(idx)) {
+      wrap.classList.add('flipped', 'confirmed', 'locked-card');
+    } else if (flippedCell === idx) {
+      wrap.classList.add('flipped');
+    }
+
+    if (!confirmed.has(idx) && flippedCell !== idx) {
+      wrap.addEventListener('click', () => handleClick(idx));
+    }
+
+    grid.appendChild(wrap);
+  });
+}
+
+function handleClick(idx) {
+  if (gameComplete) return;
+  if (confirmed.has(idx)) return;
+
+  const num = positions[idx];
+
+  // Flip this card to show the number
+  const wrap = getWrap(idx);
+  wrap.classList.add('flipped');
+
+  if (num === nextTarget) {
+    // Correct! Confirm this card permanently
+    setTimeout(() => {
+      confirmed.add(idx);
+      flippedCell = null;
+      nextTarget++;
+      renderGrid();
+      updateProgress();
+
+      if (nextTarget > TOTAL) {
+        // All done!
+        gameComplete = true;
+        document.getElementById('completeMsg').style.display = 'block';
+        document.getElementById('targetHint').style.display = 'none';
+        unlockWords();
+      } else {
+        document.getElementById('targetNum').textContent = nextTarget;
+      }
+    }, 350);
+  } else {
+    // Wrong! Shake and flip back
+    wrap.classList.add('wrong');
+    setTimeout(() => {
+      wrap.classList.remove('flipped', 'wrong');
+    }, 700);
+  }
+}
+
+function getWrap(idx) {
+  return document.querySelector(`.card-wrap[data-idx="${idx}"]`);
+}
+
+function updateProgress() {
+  const done = confirmed.size;
+  const pct = (done / TOTAL * 100).toFixed(0);
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressText').textContent = `已找到 ${done} / ${TOTAL}`;
+}
+
+function resetGame() {
+  initGame();
+}
+
+function unlockWords() {
+  const ws = document.getElementById('wordsSection');
+  const lh = document.getElementById('lockHint');
+  ws.classList.remove('locked');
+  lh.classList.add('hidden');
+  setTimeout(() => ws.scrollIntoView({ behavior: 'smooth', block: 'start' }), 400);
+}
+
+// Quick unlock: triple-click the title
+let clickCount = 0;
+document.querySelector('.puzzle-title').addEventListener('click', () => {
+  clickCount++;
+  if (clickCount >= 3) {
+    gameComplete = true;
+    confirmed = new Set(Array.from({length: TOTAL}, (_, i) => i));
+    nextTarget = TOTAL + 1;
+    renderGrid();
+    updateProgress();
+    document.getElementById('completeMsg').style.display = 'block';
+    document.getElementById('targetHint').style.display = 'none';
+    unlockWords();
+  }
+});
+
+// Start
+loadTodayWords();
+initGame();
+</script>
+
+<style>
+@keyframes celebratePuzzle {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+</style>
+
+</body>
+</html>
