@@ -2,9 +2,8 @@ name: 每日英语单词更新
 
 on:
   schedule:
-    # 每天早上 6:00 (北京时间 = UTC 22:00)
     - cron: '0 22 * * *'
-  workflow_dispatch:  # 支持手动触发测试
+  workflow_dispatch:
 
 jobs:
   update-words:
@@ -19,8 +18,16 @@ jobs:
         run: node -e "
 const fs = require('fs');
 
-const allWords = require('./words-data.json');
-const nextGroup = (allWords.group || 0) + 1;
+// 读取现有数据，获取当前 group 编号
+let currentGroup = 42; // 默认从42开始
+try {
+  const existing = JSON.parse(fs.readFileSync('words-data.json', 'utf8'));
+  if (existing.group) currentGroup = existing.group;
+} catch(e) {
+  console.log('No existing words-data.json, starting from group 42');
+}
+
+const nextGroup = currentGroup + 1;
 
 const wordPool = [
   {en:'versatile',phonetic:'/ˈvɜːrsətaɪl/',pos:'adj.',meaning:'多才多艺的；多功能的',example:'She is a versatile actress.',example_zh:'她是一位多才多艺的女演员。',tip:'谐音：玩色太哦 → 玩转各种颜色 → 多才多艺'},
