@@ -1,52 +1,52 @@
 {
-  "date": "2026-05-11",
-  "theme": "职场影响力与表达",
-  "group": 42,
+  "date": "2026-05-12",
+  "theme": "每日英语进阶",
+  "group": 43,
   "words": [
     {
-      "en": "credibility",
-      "phonetic": "/ˌkredəˈbɪlɪti/",
-      "pos": "n.",
-      "meaning": "可信度；公信力；信誉",
-      "example": "Consistently delivering results builds your credibility at work.",
-      "example_zh": "持续交付成果能在职场中建立你的公信力。",
-      "tip": "\"credit\"（信用）的延伸 → credit → credibility → 值得被信任的能力 → 公信力"
+      "en": "delegate",
+      "phonetic": "/ˈdelɪɡeɪt/",
+      "pos": "v.",
+      "meaning": "委托；授权",
+      "example": "Good managers know how to delegate.",
+      "example_zh": "好的管理者知道如何授权。",
+      "tip": "de+leg+ate → 选出代表"
     },
     {
-      "en": "constructive",
-      "phonetic": "/kənˈstrʌktɪv/",
+      "en": "versatile",
+      "phonetic": "/ˈvɜːrsətaɪl/",
       "pos": "adj.",
-      "meaning": "建设性的；有益的",
-      "example": "Please give constructive feedback, not just criticism.",
-      "example_zh": "请给出建设性的意见，而不只是批评。",
-      "tip": "\"construct\"（建造）+ -ive → 像在建造东西一样 → 建设性的"
+      "meaning": "多才多艺的；多功能的",
+      "example": "She is a versatile actress.",
+      "example_zh": "她是一位多才多艺的女演员。",
+      "tip": "谐音：玩色太哦 → 玩转各种颜色 → 多才多艺"
     },
     {
-      "en": "influence",
-      "phonetic": "/ˈɪnfluəns/",
-      "pos": "n./v.",
-      "meaning": "影响；影响力；左右",
-      "example": "Your attitude can greatly influence the team's morale.",
-      "example_zh": "你的态度能极大地影响团队士气。",
-      "tip": "\"in-\"（进入）+ \"flu\"（流动）→ 流进去 → 潜移默化地影响"
+      "en": "optimize",
+      "phonetic": "/ˈɒptɪmaɪz/",
+      "pos": "v.",
+      "meaning": "优化；使最优化",
+      "example": "We need to optimize the process.",
+      "example_zh": "我们需要优化流程。",
+      "tip": "optim(最好)+ize → 使最好"
     },
     {
-      "en": "engaged",
-      "phonetic": "/ɪnˈɡeɪdʒd/",
+      "en": "flexible",
+      "phonetic": "/ˈfleksəbl/",
       "pos": "adj.",
-      "meaning": "积极投入的；参与其中的",
-      "example": "Employees who feel engaged are far more productive.",
-      "example_zh": "感到投入的员工效率高得多。",
-      "tip": "\"engage\"（接触、参与）→ engaged = 已经投入进去了 → 积极投入的"
+      "meaning": "灵活的；可变通的",
+      "example": "We have flexible working hours.",
+      "example_zh": "我们有弹性工作时间。",
+      "tip": "flex+ible → 可以弯曲的"
     },
     {
-      "en": "mutual",
-      "phonetic": "/ˈmjuːtʃuəl/",
-      "pos": "adj.",
-      "meaning": "相互的；共同的",
-      "example": "Successful collaboration is built on mutual respect and trust.",
-      "example_zh": "成功的合作建立在相互尊重与信任之上。",
-      "tip": "谐音\"妙喱\" → 两人都觉得妙 → 互相的、共同的"
+      "en": "prioritize",
+      "phonetic": "/praɪˈɔːrɪtaɪz/",
+      "pos": "v.",
+      "meaning": "优先处理；给...排序",
+      "example": "We need to prioritize tasks.",
+      "example_zh": "我们需要对任务进行优先级排序。",
+      "tip": "priority+ize → 使成为优先"
     }
   ]
 }
