@@ -1,0 +1,73 @@
+name: 每日英语单词更新
+
+on:
+  schedule:
+    # 每天早上 6:00 (北京时间 = UTC 22:00)
+    - cron: '0 22 * * *'
+  workflow_dispatch:  # 支持手动触发测试
+
+jobs:
+  update-words:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 生成每日单词
+        id: generate-words
+        run: node -e "
+const fs = require('fs');
+
+const allWords = require('./words-data.json');
+const nextGroup = (allWords.group || 0) + 1;
+
+const wordPool = [
+  {en:'versatile',phonetic:'/ˈvɜːrsətaɪl/',pos:'adj.',meaning:'多才多艺的；多功能的',example:'She is a versatile actress.',example_zh:'她是一位多才多艺的女演员。',tip:'谐音：玩色太哦 → 玩转各种颜色 → 多才多艺'},
+  {en:'innovate',phonetic:'/ˈɪnəveɪt/',pos:'v.',meaning:'创新；革新',example:'We need to innovate to stay competitive.',example_zh:'我们需要创新以保持竞争力。',tip:'in+nov(新)+ate → 引入新的'},
+  {en:'strategic',phonetic:'/strəˈtiːdʒɪk/',pos:'adj.',meaning:'战略性的；策略的',example:'This is a strategic decision.',example_zh:'这是一个战略性的决定。',tip:'strategy的形容词形式'},
+  {en:'collaborate',phonetic:'/kəˈlæbəreɪt/',pos:'v.',meaning:'合作；协作',example:'We collaborate with partners worldwide.',example_zh:'我们与全球伙伴合作。',tip:'col+labor+ate → 一起劳动'},
+  {en:'efficient',phonetic:'/ɪˈfɪʃənt/',pos:'adj.',meaning:'高效的；有效率的',example:'This is an efficient solution.',example_zh:'这是一个高效的解决方案。',tip:'effect+ient → 有效果的'},
+  {en:'sustainable',phonetic:'/səˈsteɪnəbl/',pos:'adj.',meaning:'可持续的',example:'We need sustainable development.',example_zh:'我们需要可持续发展。',tip:'sustain+able → 可以维持的'},
+  {en:'prioritize',phonetic:'/praɪˈɔːrɪtaɪz/',pos:'v.',meaning:'优先处理；给...排序',example:'We need to prioritize tasks.',example_zh:'我们需要对任务进行优先级排序。',tip:'priority+ize → 使成为优先'},
+  {en:'transparency',phonetic:'/trænsˈpærənsɪ/',pos:'n.',meaning:'透明度；透明性',example:'We value transparency in communication.',example_zh:'我们重视沟通的透明度。',tip:'trans+parent+cy → 穿透看得见'},
+  {en:'delegate',phonetic:'/ˈdelɪɡeɪt/',pos:'v.',meaning:'委托；授权',example:'Good managers know how to delegate.',example_zh:'好的管理者知道如何授权。',tip:'de+leg+ate → 选出代表'},
+  {en:'feedback',phonetic:'/ˈfiːdbæk/',pos:'n.',meaning:'反馈；意见',example:'Please give me your feedback.',example_zh:'请给我你的反馈。',tip:'feed+back → 喂养回来的信息'},
+  {en:'flexible',phonetic:'/ˈfleksəbl/',pos:'adj.',meaning:'灵活的；可变通的',example:'We have flexible working hours.',example_zh:'我们有弹性工作时间。',tip:'flex+ible → 可以弯曲的'},
+  {en:'optimize',phonetic:'/ˈɒptɪmaɪz/',pos:'v.',meaning:'优化；使最优化',example:'We need to optimize the process.',example_zh:'我们需要优化流程。',tip:'optim(最好)+ize → 使最好'},
+  {en:'milestone',phonetic:'/ˈmaɪlstoʊn/',pos:'n.',meaning:'里程碑；重大事件',example:'This is a major milestone for us.',example_zh:'这是我们的一个重要里程碑。',tip:'mile+stone → 里程标志'},
+  {en:'proactive',phonetic:'/proʊˈæktɪv/',pos:'adj.',meaning:'主动的；积极前瞻的',example:'Be proactive in solving problems.',example_zh:'主动解决问题。',tip:'pro+active → 提前行动的'},
+  {en:'benchmark',phonetic:'/ˈbentʃmɑːrk/',pos:'n./v.',meaning:'基准；标准；用基准衡量',example:'We use this as our benchmark.',example_zh:'我们用这个作为基准。',tip:'bench+mark → 长凳上的刻度'}
+];
+
+function shuffle(arr) {
+  for(let i=arr.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [arr[i],arr[j]]=[arr[j],arr[i]];
+  }
+  return arr;
+}
+
+const selected = shuffle([...wordPool]).slice(0,5);
+const today = new Date();
+const dateStr = today.toISOString().split('T')[0];
+
+const data = {
+  date: dateStr,
+  theme: '每日英语进阶',
+  group: nextGroup,
+  words: selected
+};
+
+fs.writeFileSync('words-data.json', JSON.stringify(data, null, 2));
+console.log('已生成 ' + dateStr + ' 第' + nextGroup + '组单词');
+"
+        working-directory: .
+
+      - name: 提交并推送
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "GitHub Actions"
+          git add words-data.json
+          git diff --staged --quiet || git commit -m "📚 更新每日单词 $(date +'%Y-%m-%d')"
+          git push
