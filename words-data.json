@@ -1,16 +1,16 @@
 {
-  "date": "2026-05-13",
+  "date": "2026-05-14",
   "theme": "每日英语进阶",
-  "group": 44,
+  "group": 45,
   "words": [
     {
-      "en": "proactive",
-      "phonetic": "/proʊˈæktɪv/",
-      "pos": "adj.",
-      "meaning": "主动的；积极前瞻的",
-      "example": "Be proactive in solving problems.",
-      "example_zh": "主动解决问题。",
-      "tip": "pro+active → 提前行动的"
+      "en": "milestone",
+      "phonetic": "/ˈmaɪlstoʊn/",
+      "pos": "n.",
+      "meaning": "里程碑；重大事件",
+      "example": "This is a major milestone for us.",
+      "example_zh": "这是我们的一个重要里程碑。",
+      "tip": "mile+stone → 里程标志"
     },
     {
       "en": "strategic",
@@ -22,6 +22,24 @@
       "tip": "strategy的形容词形式"
     },
     {
+      "en": "prioritize",
+      "phonetic": "/praɪˈɔːrɪtaɪz/",
+      "pos": "v.",
+      "meaning": "优先处理；给...排序",
+      "example": "We need to prioritize tasks.",
+      "example_zh": "我们需要对任务进行优先级排序。",
+      "tip": "priority+ize → 使成为优先"
+    },
+    {
+      "en": "benchmark",
+      "phonetic": "/ˈbentʃmɑːrk/",
+      "pos": "n./v.",
+      "meaning": "基准；标准；用基准衡量",
+      "example": "We use this as our benchmark.",
+      "example_zh": "我们用这个作为基准。",
+      "tip": "bench+mark → 长凳上的刻度"
+    },
+    {
       "en": "delegate",
       "phonetic": "/ˈdelɪɡeɪt/",
       "pos": "v.",
@@ -29,24 +47,6 @@
       "example": "Good managers know how to delegate.",
       "example_zh": "好的管理者知道如何授权。",
       "tip": "de+leg+ate → 选出代表"
-    },
-    {
-      "en": "feedback",
-      "phonetic": "/ˈfiːdbæk/",
-      "pos": "n.",
-      "meaning": "反馈；意见",
-      "example": "Please give me your feedback.",
-      "example_zh": "请给我你的反馈。",
-      "tip": "feed+back → 喂养回来的信息"
-    },
-    {
-      "en": "flexible",
-      "phonetic": "/ˈfleksəbl/",
-      "pos": "adj.",
-      "meaning": "灵活的；可变通的",
-      "example": "We have flexible working hours.",
-      "example_zh": "我们有弹性工作时间。",
-      "tip": "flex+ible → 可以弯曲的"
     }
   ]
 }
