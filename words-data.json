@@ -1,34 +1,16 @@
 {
-  "date": "2026-05-19",
+  "date": "2026-05-20",
   "theme": "每日英语进阶",
-  "group": 50,
+  "group": 51,
   "words": [
     {
-      "en": "sustainable",
-      "phonetic": "/səˈsteɪnəbl/",
-      "pos": "adj.",
-      "meaning": "可持续的",
-      "example": "We need sustainable development.",
-      "example_zh": "我们需要可持续发展。",
-      "tip": "sustain+able → 可以维持的"
-    },
-    {
-      "en": "proactive",
-      "phonetic": "/proʊˈæktɪv/",
-      "pos": "adj.",
-      "meaning": "主动的；积极前瞻的",
-      "example": "Be proactive in solving problems.",
-      "example_zh": "主动解决问题。",
-      "tip": "pro+active → 提前行动的"
-    },
-    {
-      "en": "innovate",
-      "phonetic": "/ˈɪnəveɪt/",
-      "pos": "v.",
-      "meaning": "创新；革新",
-      "example": "We need to innovate to stay competitive.",
-      "example_zh": "我们需要创新以保持竞争力。",
-      "tip": "in+nov(新)+ate → 引入新的"
+      "en": "transparency",
+      "phonetic": "/trænsˈpærənsɪ/",
+      "pos": "n.",
+      "meaning": "透明度；透明性",
+      "example": "We value transparency in communication.",
+      "example_zh": "我们重视沟通的透明度。",
+      "tip": "trans+parent+cy → 穿透看得见"
     },
     {
       "en": "efficient",
@@ -40,13 +22,31 @@
       "tip": "effect+ient → 有效果的"
     },
     {
-      "en": "optimize",
-      "phonetic": "/ˈɒptɪmaɪz/",
-      "pos": "v.",
-      "meaning": "优化；使最优化",
-      "example": "We need to optimize the process.",
-      "example_zh": "我们需要优化流程。",
-      "tip": "optim(最好)+ize → 使最好"
+      "en": "flexible",
+      "phonetic": "/ˈfleksəbl/",
+      "pos": "adj.",
+      "meaning": "灵活的；可变通的",
+      "example": "We have flexible working hours.",
+      "example_zh": "我们有弹性工作时间。",
+      "tip": "flex+ible → 可以弯曲的"
+    },
+    {
+      "en": "feedback",
+      "phonetic": "/ˈfiːdbæk/",
+      "pos": "n.",
+      "meaning": "反馈；意见",
+      "example": "Please give me your feedback.",
+      "example_zh": "请给我你的反馈。",
+      "tip": "feed+back → 喂养回来的信息"
+    },
+    {
+      "en": "milestone",
+      "phonetic": "/ˈmaɪlstoʊn/",
+      "pos": "n.",
+      "meaning": "里程碑；重大事件",
+      "example": "This is a major milestone for us.",
+      "example_zh": "这是我们的一个重要里程碑。",
+      "tip": "mile+stone → 里程标志"
     }
   ]
 }
