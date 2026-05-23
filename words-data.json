@@ -1,52 +1,52 @@
 {
-  "date": "2026-05-22",
+  "date": "2026-05-23",
   "theme": "每日英语进阶",
-  "group": 53,
+  "group": 54,
   "words": [
     {
-      "en": "milestone",
-      "phonetic": "/ˈmaɪlstoʊn/",
-      "pos": "n.",
-      "meaning": "里程碑；重大事件",
-      "example": "This is a major milestone for us.",
-      "example_zh": "这是我们的一个重要里程碑。",
-      "tip": "mile+stone → 里程标志"
+      "en": "benchmark",
+      "phonetic": "/ˈbentʃmɑːrk/",
+      "pos": "n./v.",
+      "meaning": "基准；标准；用基准衡量",
+      "example": "We use this as our benchmark.",
+      "example_zh": "我们用这个作为基准。",
+      "tip": "bench+mark → 长凳上的刻度"
     },
     {
-      "en": "sustainable",
-      "phonetic": "/səˈsteɪnəbl/",
+      "en": "proactive",
+      "phonetic": "/proʊˈæktɪv/",
       "pos": "adj.",
-      "meaning": "可持续的",
-      "example": "We need sustainable development.",
-      "example_zh": "我们需要可持续发展。",
-      "tip": "sustain+able → 可以维持的"
+      "meaning": "主动的；积极前瞻的",
+      "example": "Be proactive in solving problems.",
+      "example_zh": "主动解决问题。",
+      "tip": "pro+active → 提前行动的"
     },
     {
-      "en": "optimize",
-      "phonetic": "/ˈɒptɪmaɪz/",
+      "en": "collaborate",
+      "phonetic": "/kəˈlæbəreɪt/",
       "pos": "v.",
-      "meaning": "优化；使最优化",
-      "example": "We need to optimize the process.",
-      "example_zh": "我们需要优化流程。",
-      "tip": "optim(最好)+ize → 使最好"
+      "meaning": "合作；协作",
+      "example": "We collaborate with partners worldwide.",
+      "example_zh": "我们与全球伙伴合作。",
+      "tip": "col+labor+ate → 一起劳动"
     },
     {
-      "en": "feedback",
-      "phonetic": "/ˈfiːdbæk/",
-      "pos": "n.",
-      "meaning": "反馈；意见",
-      "example": "Please give me your feedback.",
-      "example_zh": "请给我你的反馈。",
-      "tip": "feed+back → 喂养回来的信息"
+      "en": "flexible",
+      "phonetic": "/ˈfleksəbl/",
+      "pos": "adj.",
+      "meaning": "灵活的；可变通的",
+      "example": "We have flexible working hours.",
+      "example_zh": "我们有弹性工作时间。",
+      "tip": "flex+ible → 可以弯曲的"
     },
     {
-      "en": "prioritize",
-      "phonetic": "/praɪˈɔːrɪtaɪz/",
-      "pos": "v.",
-      "meaning": "优先处理；给...排序",
-      "example": "We need to prioritize tasks.",
-      "example_zh": "我们需要对任务进行优先级排序。",
-      "tip": "priority+ize → 使成为优先"
+      "en": "strategic",
+      "phonetic": "/strəˈtiːdʒɪk/",
+      "pos": "adj.",
+      "meaning": "战略性的；策略的",
+      "example": "This is a strategic decision.",
+      "example_zh": "这是一个战略性的决定。",
+      "tip": "strategy的形容词形式"
     }
   ]
 }
