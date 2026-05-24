@@ -1,8 +1,35 @@
 {
-  "date": "2026-05-23",
+  "date": "2026-05-24",
   "theme": "每日英语进阶",
-  "group": 54,
+  "group": 55,
   "words": [
+    {
+      "en": "transparency",
+      "phonetic": "/trænsˈpærənsɪ/",
+      "pos": "n.",
+      "meaning": "透明度；透明性",
+      "example": "We value transparency in communication.",
+      "example_zh": "我们重视沟通的透明度。",
+      "tip": "trans+parent+cy → 穿透看得见"
+    },
+    {
+      "en": "versatile",
+      "phonetic": "/ˈvɜːrsətaɪl/",
+      "pos": "adj.",
+      "meaning": "多才多艺的；多功能的",
+      "example": "She is a versatile actress.",
+      "example_zh": "她是一位多才多艺的女演员。",
+      "tip": "谐音：玩色太哦 → 玩转各种颜色 → 多才多艺"
+    },
+    {
+      "en": "feedback",
+      "phonetic": "/ˈfiːdbæk/",
+      "pos": "n.",
+      "meaning": "反馈；意见",
+      "example": "Please give me your feedback.",
+      "example_zh": "请给我你的反馈。",
+      "tip": "feed+back → 喂养回来的信息"
+    },
     {
       "en": "benchmark",
       "phonetic": "/ˈbentʃmɑːrk/",
@@ -13,15 +40,6 @@
       "tip": "bench+mark → 长凳上的刻度"
     },
     {
-      "en": "proactive",
-      "phonetic": "/proʊˈæktɪv/",
-      "pos": "adj.",
-      "meaning": "主动的；积极前瞻的",
-      "example": "Be proactive in solving problems.",
-      "example_zh": "主动解决问题。",
-      "tip": "pro+active → 提前行动的"
-    },
-    {
       "en": "collaborate",
       "phonetic": "/kəˈlæbəreɪt/",
       "pos": "v.",
@@ -29,24 +47,6 @@
       "example": "We collaborate with partners worldwide.",
       "example_zh": "我们与全球伙伴合作。",
       "tip": "col+labor+ate → 一起劳动"
-    },
-    {
-      "en": "flexible",
-      "phonetic": "/ˈfleksəbl/",
-      "pos": "adj.",
-      "meaning": "灵活的；可变通的",
-      "example": "We have flexible working hours.",
-      "example_zh": "我们有弹性工作时间。",
-      "tip": "flex+ible → 可以弯曲的"
-    },
-    {
-      "en": "strategic",
-      "phonetic": "/strəˈtiːdʒɪk/",
-      "pos": "adj.",
-      "meaning": "战略性的；策略的",
-      "example": "This is a strategic decision.",
-      "example_zh": "这是一个战略性的决定。",
-      "tip": "strategy的形容词形式"
     }
   ]
 }
