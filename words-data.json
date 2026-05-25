@@ -1,25 +1,43 @@
 {
-  "date": "2026-05-24",
+  "date": "2026-05-25",
   "theme": "每日英语进阶",
-  "group": 55,
+  "group": 56,
   "words": [
     {
-      "en": "transparency",
-      "phonetic": "/trænsˈpærənsɪ/",
-      "pos": "n.",
-      "meaning": "透明度；透明性",
-      "example": "We value transparency in communication.",
-      "example_zh": "我们重视沟通的透明度。",
-      "tip": "trans+parent+cy → 穿透看得见"
+      "en": "collaborate",
+      "phonetic": "/kəˈlæbəreɪt/",
+      "pos": "v.",
+      "meaning": "合作；协作",
+      "example": "We collaborate with partners worldwide.",
+      "example_zh": "我们与全球伙伴合作。",
+      "tip": "col+labor+ate → 一起劳动"
     },
     {
-      "en": "versatile",
-      "phonetic": "/ˈvɜːrsətaɪl/",
+      "en": "innovate",
+      "phonetic": "/ˈɪnəveɪt/",
+      "pos": "v.",
+      "meaning": "创新；革新",
+      "example": "We need to innovate to stay competitive.",
+      "example_zh": "我们需要创新以保持竞争力。",
+      "tip": "in+nov(新)+ate → 引入新的"
+    },
+    {
+      "en": "strategic",
+      "phonetic": "/strəˈtiːdʒɪk/",
       "pos": "adj.",
-      "meaning": "多才多艺的；多功能的",
-      "example": "She is a versatile actress.",
-      "example_zh": "她是一位多才多艺的女演员。",
-      "tip": "谐音：玩色太哦 → 玩转各种颜色 → 多才多艺"
+      "meaning": "战略性的；策略的",
+      "example": "This is a strategic decision.",
+      "example_zh": "这是一个战略性的决定。",
+      "tip": "strategy的形容词形式"
+    },
+    {
+      "en": "prioritize",
+      "phonetic": "/praɪˈɔːrɪtaɪz/",
+      "pos": "v.",
+      "meaning": "优先处理；给...排序",
+      "example": "We need to prioritize tasks.",
+      "example_zh": "我们需要对任务进行优先级排序。",
+      "tip": "priority+ize → 使成为优先"
     },
     {
       "en": "feedback",
@@ -29,24 +47,6 @@
       "example": "Please give me your feedback.",
       "example_zh": "请给我你的反馈。",
       "tip": "feed+back → 喂养回来的信息"
-    },
-    {
-      "en": "benchmark",
-      "phonetic": "/ˈbentʃmɑːrk/",
-      "pos": "n./v.",
-      "meaning": "基准；标准；用基准衡量",
-      "example": "We use this as our benchmark.",
-      "example_zh": "我们用这个作为基准。",
-      "tip": "bench+mark → 长凳上的刻度"
-    },
-    {
-      "en": "collaborate",
-      "phonetic": "/kəˈlæbəreɪt/",
-      "pos": "v.",
-      "meaning": "合作；协作",
-      "example": "We collaborate with partners worldwide.",
-      "example_zh": "我们与全球伙伴合作。",
-      "tip": "col+labor+ate → 一起劳动"
     }
   ]
 }
