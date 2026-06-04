@@ -1,26 +1,8 @@
 {
-  "date": "2026-06-03",
+  "date": "2026-06-04",
   "theme": "每日英语进阶",
-  "group": 64,
+  "group": 65,
   "words": [
-    {
-      "en": "strategic",
-      "phonetic": "/strəˈtiːdʒɪk/",
-      "pos": "adj.",
-      "meaning": "战略性的；策略的",
-      "example": "This is a strategic decision.",
-      "example_zh": "这是一个战略性的决定。",
-      "tip": "strategy的形容词形式"
-    },
-    {
-      "en": "collaborate",
-      "phonetic": "/kəˈlæbəreɪt/",
-      "pos": "v.",
-      "meaning": "合作；协作",
-      "example": "We collaborate with partners worldwide.",
-      "example_zh": "我们与全球伙伴合作。",
-      "tip": "col+labor+ate → 一起劳动"
-    },
     {
       "en": "innovate",
       "phonetic": "/ˈɪnəveɪt/",
@@ -31,13 +13,13 @@
       "tip": "in+nov(新)+ate → 引入新的"
     },
     {
-      "en": "benchmark",
-      "phonetic": "/ˈbentʃmɑːrk/",
-      "pos": "n./v.",
-      "meaning": "基准；标准；用基准衡量",
-      "example": "We use this as our benchmark.",
-      "example_zh": "我们用这个作为基准。",
-      "tip": "bench+mark → 长凳上的刻度"
+      "en": "prioritize",
+      "phonetic": "/praɪˈɔːrɪtaɪz/",
+      "pos": "v.",
+      "meaning": "优先处理；给...排序",
+      "example": "We need to prioritize tasks.",
+      "example_zh": "我们需要对任务进行优先级排序。",
+      "tip": "priority+ize → 使成为优先"
     },
     {
       "en": "transparency",
@@ -47,6 +29,24 @@
       "example": "We value transparency in communication.",
       "example_zh": "我们重视沟通的透明度。",
       "tip": "trans+parent+cy → 穿透看得见"
+    },
+    {
+      "en": "optimize",
+      "phonetic": "/ˈɒptɪmaɪz/",
+      "pos": "v.",
+      "meaning": "优化；使最优化",
+      "example": "We need to optimize the process.",
+      "example_zh": "我们需要优化流程。",
+      "tip": "optim(最好)+ize → 使最好"
+    },
+    {
+      "en": "collaborate",
+      "phonetic": "/kəˈlæbəreɪt/",
+      "pos": "v.",
+      "meaning": "合作；协作",
+      "example": "We collaborate with partners worldwide.",
+      "example_zh": "我们与全球伙伴合作。",
+      "tip": "col+labor+ate → 一起劳动"
     }
   ]
 }
