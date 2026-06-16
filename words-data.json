@@ -1,52 +1,52 @@
 {
-  "date": "2026-06-15",
-  "theme": "每日英语进阶",
-  "group": 77,
+  "date": "2026-06-16",
+  "theme": "周二·专注深耕",
+  "group": 48,
   "words": [
     {
-      "en": "feedback",
-      "phonetic": "/ˈfiːdbæk/",
-      "pos": "n.",
-      "meaning": "反馈；意见",
-      "example": "Please give me your feedback.",
-      "example_zh": "请给我你的反馈。",
-      "tip": "feed+back → 喂养回来的信息"
+      "en": "immerse",
+      "phonetic": "/ɪˈmɜːrs/",
+      "pos": "v.",
+      "meaning": "沉浸；全神贯注于",
+      "example": "She immersed herself in the project and finished it in record time.",
+      "example_zh": "她全身心投入项目，以破纪录的速度完成了它。",
+      "tip": "immerse = immer（投入）+ se → 把自己整个扔进去 → 沉浸其中"
     },
     {
-      "en": "flexible",
-      "phonetic": "/ˈfleksəbl/",
+      "en": "meticulous",
+      "phonetic": "/məˈtɪkjələs/",
       "pos": "adj.",
-      "meaning": "灵活的；可变通的",
-      "example": "We have flexible working hours.",
-      "example_zh": "我们有弹性工作时间。",
-      "tip": "flex+ible → 可以弯曲的"
+      "meaning": "一丝不苟的；极其细致的",
+      "example": "A meticulous review can catch errors that shortcuts miss.",
+      "example_zh": "一丝不苟的审查能发现捷径遗漏的错误。",
+      "tip": "meticulous 来自拉丁语 meticulosus（恐惧的）→ 因为太小心所以显得恐惧 → 极细致"
     },
     {
-      "en": "versatile",
-      "phonetic": "/ˈvɜːrsətaɪl/",
-      "pos": "adj.",
-      "meaning": "多才多艺的；多功能的",
-      "example": "She is a versatile actress.",
-      "example_zh": "她是一位多才多艺的女演员。",
-      "tip": "谐音：玩色太哦 → 玩转各种颜色 → 多才多艺"
+      "en": "distill",
+      "phonetic": "/dɪˈstɪl/",
+      "pos": "v.",
+      "meaning": "提炼；浓缩精华",
+      "example": "Can you distill the report into three key takeaways?",
+      "example_zh": "你能把报告提炼成三个核心要点吗？",
+      "tip": "蒸馏（distill）液体 → 去除杂质留下精华 → 提炼要点"
     },
     {
-      "en": "sustainable",
-      "phonetic": "/səˈsteɪnəbl/",
+      "en": "resilient",
+      "phonetic": "/rɪˈzɪliənt/",
       "pos": "adj.",
-      "meaning": "可持续的",
-      "example": "We need sustainable development.",
-      "example_zh": "我们需要可持续发展。",
-      "tip": "sustain+able → 可以维持的"
+      "meaning": "有弹性的；能迅速恢复的",
+      "example": "Resilient teams bounce back faster from setbacks.",
+      "example_zh": "有韧性的团队从挫折中恢复得更快。",
+      "tip": "resilient = re（回）+ silire（跳）→ 被压下去还能弹回来 → 有弹性"
     },
     {
-      "en": "proactive",
-      "phonetic": "/proʊˈæktɪv/",
-      "pos": "adj.",
-      "meaning": "主动的；积极前瞻的",
-      "example": "Be proactive in solving problems.",
-      "example_zh": "主动解决问题。",
-      "tip": "pro+active → 提前行动的"
+      "en": "pivot",
+      "phonetic": "/ˈpɪvət/",
+      "pos": "v./n.",
+      "meaning": "转向；关键转折点",
+      "example": "When the market shifted, the company pivoted to a new strategy.",
+      "example_zh": "市场变化时，公司转向了新策略。",
+      "tip": "pivot 原意是「枢轴」→ 绕着一个点转 → 灵活转向新方向"
     }
   ]
 }
