@@ -1,35 +1,8 @@
 {
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "theme": "每日英语进阶",
-  "group": 53,
+  "group": 54,
   "words": [
-    {
-      "en": "proactive",
-      "phonetic": "/proʊˈæktɪv/",
-      "pos": "adj.",
-      "meaning": "主动的；积极前瞻的",
-      "example": "Be proactive in solving problems.",
-      "example_zh": "主动解决问题。",
-      "tip": "pro+active → 提前行动的"
-    },
-    {
-      "en": "prioritize",
-      "phonetic": "/praɪˈɔːrɪtaɪz/",
-      "pos": "v.",
-      "meaning": "优先处理；给...排序",
-      "example": "We need to prioritize tasks.",
-      "example_zh": "我们需要对任务进行优先级排序。",
-      "tip": "priority+ize → 使成为优先"
-    },
-    {
-      "en": "transparency",
-      "phonetic": "/trænsˈpærənsɪ/",
-      "pos": "n.",
-      "meaning": "透明度；透明性",
-      "example": "We value transparency in communication.",
-      "example_zh": "我们重视沟通的透明度。",
-      "tip": "trans+parent+cy → 穿透看得见"
-    },
     {
       "en": "feedback",
       "phonetic": "/ˈfiːdbæk/",
@@ -47,6 +20,33 @@
       "example": "This is an efficient solution.",
       "example_zh": "这是一个高效的解决方案。",
       "tip": "effect+ient → 有效果的"
+    },
+    {
+      "en": "proactive",
+      "phonetic": "/proʊˈæktɪv/",
+      "pos": "adj.",
+      "meaning": "主动的；积极前瞻的",
+      "example": "Be proactive in solving problems.",
+      "example_zh": "主动解决问题。",
+      "tip": "pro+active → 提前行动的"
+    },
+    {
+      "en": "strategic",
+      "phonetic": "/strəˈtiːdʒɪk/",
+      "pos": "adj.",
+      "meaning": "战略性的；策略的",
+      "example": "This is a strategic decision.",
+      "example_zh": "这是一个战略性的决定。",
+      "tip": "strategy的形容词形式"
+    },
+    {
+      "en": "milestone",
+      "phonetic": "/ˈmaɪlstoʊn/",
+      "pos": "n.",
+      "meaning": "里程碑；重大事件",
+      "example": "This is a major milestone for us.",
+      "example_zh": "这是我们的一个重要里程碑。",
+      "tip": "mile+stone → 里程标志"
     }
   ]
 }
