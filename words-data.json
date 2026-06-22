@@ -1,43 +1,34 @@
 {
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "theme": "每日英语进阶",
-  "group": 54,
+  "group": 55,
   "words": [
     {
-      "en": "feedback",
-      "phonetic": "/ˈfiːdbæk/",
-      "pos": "n.",
-      "meaning": "反馈；意见",
-      "example": "Please give me your feedback.",
-      "example_zh": "请给我你的反馈。",
-      "tip": "feed+back → 喂养回来的信息"
+      "en": "innovate",
+      "phonetic": "/ˈɪnəveɪt/",
+      "pos": "v.",
+      "meaning": "创新；革新",
+      "example": "We need to innovate to stay competitive.",
+      "example_zh": "我们需要创新以保持竞争力。",
+      "tip": "in+nov(新)+ate → 引入新的"
     },
     {
-      "en": "efficient",
-      "phonetic": "/ɪˈfɪʃənt/",
-      "pos": "adj.",
-      "meaning": "高效的；有效率的",
-      "example": "This is an efficient solution.",
-      "example_zh": "这是一个高效的解决方案。",
-      "tip": "effect+ient → 有效果的"
+      "en": "optimize",
+      "phonetic": "/ˈɒptɪmaɪz/",
+      "pos": "v.",
+      "meaning": "优化；使最优化",
+      "example": "We need to optimize the process.",
+      "example_zh": "我们需要优化流程。",
+      "tip": "optim(最好)+ize → 使最好"
     },
     {
-      "en": "proactive",
-      "phonetic": "/proʊˈæktɪv/",
+      "en": "flexible",
+      "phonetic": "/ˈfleksəbl/",
       "pos": "adj.",
-      "meaning": "主动的；积极前瞻的",
-      "example": "Be proactive in solving problems.",
-      "example_zh": "主动解决问题。",
-      "tip": "pro+active → 提前行动的"
-    },
-    {
-      "en": "strategic",
-      "phonetic": "/strəˈtiːdʒɪk/",
-      "pos": "adj.",
-      "meaning": "战略性的；策略的",
-      "example": "This is a strategic decision.",
-      "example_zh": "这是一个战略性的决定。",
-      "tip": "strategy的形容词形式"
+      "meaning": "灵活的；可变通的",
+      "example": "We have flexible working hours.",
+      "example_zh": "我们有弹性工作时间。",
+      "tip": "flex+ible → 可以弯曲的"
     },
     {
       "en": "milestone",
@@ -47,6 +38,15 @@
       "example": "This is a major milestone for us.",
       "example_zh": "这是我们的一个重要里程碑。",
       "tip": "mile+stone → 里程标志"
+    },
+    {
+      "en": "delegate",
+      "phonetic": "/ˈdelɪɡeɪt/",
+      "pos": "v.",
+      "meaning": "委托；授权",
+      "example": "Good managers know how to delegate.",
+      "example_zh": "好的管理者知道如何授权。",
+      "tip": "de+leg+ate → 选出代表"
     }
   ]
 }
