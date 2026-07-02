@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-01",
+  "date": "2026-07-02",
   "theme": "每日英语进阶",
-  "group": 64,
+  "group": 65,
   "words": [
     {
       "en": "collaborate",
@@ -13,22 +13,13 @@
       "tip": "col+labor+ate → 一起劳动"
     },
     {
-      "en": "benchmark",
-      "phonetic": "/ˈbentʃmɑːrk/",
-      "pos": "n./v.",
-      "meaning": "基准；标准；用基准衡量",
-      "example": "We use this as our benchmark.",
-      "example_zh": "我们用这个作为基准。",
-      "tip": "bench+mark → 长凳上的刻度"
-    },
-    {
-      "en": "milestone",
-      "phonetic": "/ˈmaɪlstoʊn/",
-      "pos": "n.",
-      "meaning": "里程碑；重大事件",
-      "example": "This is a major milestone for us.",
-      "example_zh": "这是我们的一个重要里程碑。",
-      "tip": "mile+stone → 里程标志"
+      "en": "delegate",
+      "phonetic": "/ˈdelɪɡeɪt/",
+      "pos": "v.",
+      "meaning": "委托；授权",
+      "example": "Good managers know how to delegate.",
+      "example_zh": "好的管理者知道如何授权。",
+      "tip": "de+leg+ate → 选出代表"
     },
     {
       "en": "proactive",
@@ -40,13 +31,22 @@
       "tip": "pro+active → 提前行动的"
     },
     {
-      "en": "feedback",
-      "phonetic": "/ˈfiːdbæk/",
-      "pos": "n.",
-      "meaning": "反馈；意见",
-      "example": "Please give me your feedback.",
-      "example_zh": "请给我你的反馈。",
-      "tip": "feed+back → 喂养回来的信息"
+      "en": "flexible",
+      "phonetic": "/ˈfleksəbl/",
+      "pos": "adj.",
+      "meaning": "灵活的；可变通的",
+      "example": "We have flexible working hours.",
+      "example_zh": "我们有弹性工作时间。",
+      "tip": "flex+ible → 可以弯曲的"
+    },
+    {
+      "en": "benchmark",
+      "phonetic": "/ˈbentʃmɑːrk/",
+      "pos": "n./v.",
+      "meaning": "基准；标准；用基准衡量",
+      "example": "We use this as our benchmark.",
+      "example_zh": "我们用这个作为基准。",
+      "tip": "bench+mark → 长凳上的刻度"
     }
   ]
 }
