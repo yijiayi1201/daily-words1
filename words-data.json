@@ -1,17 +1,8 @@
 {
-  "date": "2026-07-20",
+  "date": "2026-07-21",
   "theme": "每日英语进阶",
-  "group": 83,
+  "group": 84,
   "words": [
-    {
-      "en": "transparency",
-      "phonetic": "/trænsˈpærənsɪ/",
-      "pos": "n.",
-      "meaning": "透明度；透明性",
-      "example": "We value transparency in communication.",
-      "example_zh": "我们重视沟通的透明度。",
-      "tip": "trans+parent+cy → 穿透看得见"
-    },
     {
       "en": "prioritize",
       "phonetic": "/praɪˈɔːrɪtaɪz/",
@@ -22,13 +13,31 @@
       "tip": "priority+ize → 使成为优先"
     },
     {
-      "en": "benchmark",
-      "phonetic": "/ˈbentʃmɑːrk/",
-      "pos": "n./v.",
-      "meaning": "基准；标准；用基准衡量",
-      "example": "We use this as our benchmark.",
-      "example_zh": "我们用这个作为基准。",
-      "tip": "bench+mark → 长凳上的刻度"
+      "en": "sustainable",
+      "phonetic": "/səˈsteɪnəbl/",
+      "pos": "adj.",
+      "meaning": "可持续的",
+      "example": "We need sustainable development.",
+      "example_zh": "我们需要可持续发展。",
+      "tip": "sustain+able → 可以维持的"
+    },
+    {
+      "en": "proactive",
+      "phonetic": "/proʊˈæktɪv/",
+      "pos": "adj.",
+      "meaning": "主动的；积极前瞻的",
+      "example": "Be proactive in solving problems.",
+      "example_zh": "主动解决问题。",
+      "tip": "pro+active → 提前行动的"
+    },
+    {
+      "en": "optimize",
+      "phonetic": "/ˈɒptɪmaɪz/",
+      "pos": "v.",
+      "meaning": "优化；使最优化",
+      "example": "We need to optimize the process.",
+      "example_zh": "我们需要优化流程。",
+      "tip": "optim(最好)+ize → 使最好"
     },
     {
       "en": "flexible",
@@ -38,15 +47,6 @@
       "example": "We have flexible working hours.",
       "example_zh": "我们有弹性工作时间。",
       "tip": "flex+ible → 可以弯曲的"
-    },
-    {
-      "en": "collaborate",
-      "phonetic": "/kəˈlæbəreɪt/",
-      "pos": "v.",
-      "meaning": "合作；协作",
-      "example": "We collaborate with partners worldwide.",
-      "example_zh": "我们与全球伙伴合作。",
-      "tip": "col+labor+ate → 一起劳动"
     }
   ]
 }
