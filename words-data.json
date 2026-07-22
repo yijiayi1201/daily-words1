@@ -1,26 +1,8 @@
 {
-  "date": "2026-07-21",
+  "date": "2026-07-22",
   "theme": "每日英语进阶",
-  "group": 84,
+  "group": 85,
   "words": [
-    {
-      "en": "prioritize",
-      "phonetic": "/praɪˈɔːrɪtaɪz/",
-      "pos": "v.",
-      "meaning": "优先处理；给...排序",
-      "example": "We need to prioritize tasks.",
-      "example_zh": "我们需要对任务进行优先级排序。",
-      "tip": "priority+ize → 使成为优先"
-    },
-    {
-      "en": "sustainable",
-      "phonetic": "/səˈsteɪnəbl/",
-      "pos": "adj.",
-      "meaning": "可持续的",
-      "example": "We need sustainable development.",
-      "example_zh": "我们需要可持续发展。",
-      "tip": "sustain+able → 可以维持的"
-    },
     {
       "en": "proactive",
       "phonetic": "/proʊˈæktɪv/",
@@ -29,6 +11,15 @@
       "example": "Be proactive in solving problems.",
       "example_zh": "主动解决问题。",
       "tip": "pro+active → 提前行动的"
+    },
+    {
+      "en": "flexible",
+      "phonetic": "/ˈfleksəbl/",
+      "pos": "adj.",
+      "meaning": "灵活的；可变通的",
+      "example": "We have flexible working hours.",
+      "example_zh": "我们有弹性工作时间。",
+      "tip": "flex+ible → 可以弯曲的"
     },
     {
       "en": "optimize",
@@ -40,13 +31,22 @@
       "tip": "optim(最好)+ize → 使最好"
     },
     {
-      "en": "flexible",
-      "phonetic": "/ˈfleksəbl/",
+      "en": "sustainable",
+      "phonetic": "/səˈsteɪnəbl/",
       "pos": "adj.",
-      "meaning": "灵活的；可变通的",
-      "example": "We have flexible working hours.",
-      "example_zh": "我们有弹性工作时间。",
-      "tip": "flex+ible → 可以弯曲的"
+      "meaning": "可持续的",
+      "example": "We need sustainable development.",
+      "example_zh": "我们需要可持续发展。",
+      "tip": "sustain+able → 可以维持的"
+    },
+    {
+      "en": "benchmark",
+      "phonetic": "/ˈbentʃmɑːrk/",
+      "pos": "n./v.",
+      "meaning": "基准；标准；用基准衡量",
+      "example": "We use this as our benchmark.",
+      "example_zh": "我们用这个作为基准。",
+      "tip": "bench+mark → 长凳上的刻度"
     }
   ]
 }
