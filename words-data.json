@@ -1,8 +1,35 @@
 {
   "date": "2026-08-07",
   "theme": "每日英语进阶",
-  "group": 100,
+  "group": 101,
   "words": [
+    {
+      "en": "versatile",
+      "phonetic": "/ˈvɜːrsətaɪl/",
+      "pos": "adj.",
+      "meaning": "多才多艺的；多功能的",
+      "example": "She is a versatile actress.",
+      "example_zh": "她是一位多才多艺的女演员。",
+      "tip": "谐音：玩色太哦 → 玩转各种颜色 → 多才多艺"
+    },
+    {
+      "en": "strategic",
+      "phonetic": "/strəˈtiːdʒɪk/",
+      "pos": "adj.",
+      "meaning": "战略性的；策略的",
+      "example": "This is a strategic decision.",
+      "example_zh": "这是一个战略性的决定。",
+      "tip": "strategy的形容词形式"
+    },
+    {
+      "en": "proactive",
+      "phonetic": "/proʊˈæktɪv/",
+      "pos": "adj.",
+      "meaning": "主动的；积极前瞻的",
+      "example": "Be proactive in solving problems.",
+      "example_zh": "主动解决问题。",
+      "tip": "pro+active → 提前行动的"
+    },
     {
       "en": "collaborate",
       "phonetic": "/kəˈlæbəreɪt/",
@@ -13,40 +40,13 @@
       "tip": "col+labor+ate → 一起劳动"
     },
     {
-      "en": "flexible",
-      "phonetic": "/ˈfleksəbl/",
-      "pos": "adj.",
-      "meaning": "灵活的；可变通的",
-      "example": "We have flexible working hours.",
-      "example_zh": "我们有弹性工作时间。",
-      "tip": "flex+ible → 可以弯曲的"
-    },
-    {
-      "en": "optimize",
-      "phonetic": "/ˈɒptɪmaɪz/",
+      "en": "innovate",
+      "phonetic": "/ˈɪnəveɪt/",
       "pos": "v.",
-      "meaning": "优化；使最优化",
-      "example": "We need to optimize the process.",
-      "example_zh": "我们需要优化流程。",
-      "tip": "optim(最好)+ize → 使最好"
-    },
-    {
-      "en": "efficient",
-      "phonetic": "/ɪˈfɪʃənt/",
-      "pos": "adj.",
-      "meaning": "高效的；有效率的",
-      "example": "This is an efficient solution.",
-      "example_zh": "这是一个高效的解决方案。",
-      "tip": "effect+ient → 有效果的"
-    },
-    {
-      "en": "benchmark",
-      "phonetic": "/ˈbentʃmɑːrk/",
-      "pos": "n./v.",
-      "meaning": "基准；标准；用基准衡量",
-      "example": "We use this as our benchmark.",
-      "example_zh": "我们用这个作为基准。",
-      "tip": "bench+mark → 长凳上的刻度"
+      "meaning": "创新；革新",
+      "example": "We need to innovate to stay competitive.",
+      "example_zh": "我们需要创新以保持竞争力。",
+      "tip": "in+nov(新)+ate → 引入新的"
     }
   ]
 }
