@@ -1,16 +1,25 @@
 {
-  "date": "2026-08-08",
+  "date": "2026-08-09",
   "theme": "每日英语进阶",
-  "group": 102,
+  "group": 103,
   "words": [
     {
-      "en": "delegate",
-      "phonetic": "/ˈdelɪɡeɪt/",
-      "pos": "v.",
-      "meaning": "委托；授权",
-      "example": "Good managers know how to delegate.",
-      "example_zh": "好的管理者知道如何授权。",
-      "tip": "de+leg+ate → 选出代表"
+      "en": "versatile",
+      "phonetic": "/ˈvɜːrsətaɪl/",
+      "pos": "adj.",
+      "meaning": "多才多艺的；多功能的",
+      "example": "She is a versatile actress.",
+      "example_zh": "她是一位多才多艺的女演员。",
+      "tip": "谐音：玩色太哦 → 玩转各种颜色 → 多才多艺"
+    },
+    {
+      "en": "milestone",
+      "phonetic": "/ˈmaɪlstoʊn/",
+      "pos": "n.",
+      "meaning": "里程碑；重大事件",
+      "example": "This is a major milestone for us.",
+      "example_zh": "这是我们的一个重要里程碑。",
+      "tip": "mile+stone → 里程标志"
     },
     {
       "en": "proactive",
@@ -22,24 +31,6 @@
       "tip": "pro+active → 提前行动的"
     },
     {
-      "en": "versatile",
-      "phonetic": "/ˈvɜːrsətaɪl/",
-      "pos": "adj.",
-      "meaning": "多才多艺的；多功能的",
-      "example": "She is a versatile actress.",
-      "example_zh": "她是一位多才多艺的女演员。",
-      "tip": "谐音：玩色太哦 → 玩转各种颜色 → 多才多艺"
-    },
-    {
-      "en": "prioritize",
-      "phonetic": "/praɪˈɔːrɪtaɪz/",
-      "pos": "v.",
-      "meaning": "优先处理；给...排序",
-      "example": "We need to prioritize tasks.",
-      "example_zh": "我们需要对任务进行优先级排序。",
-      "tip": "priority+ize → 使成为优先"
-    },
-    {
       "en": "sustainable",
       "phonetic": "/səˈsteɪnəbl/",
       "pos": "adj.",
@@ -47,6 +38,15 @@
       "example": "We need sustainable development.",
       "example_zh": "我们需要可持续发展。",
       "tip": "sustain+able → 可以维持的"
+    },
+    {
+      "en": "transparency",
+      "phonetic": "/trænsˈpærənsɪ/",
+      "pos": "n.",
+      "meaning": "透明度；透明性",
+      "example": "We value transparency in communication.",
+      "example_zh": "我们重视沟通的透明度。",
+      "tip": "trans+parent+cy → 穿透看得见"
     }
   ]
 }
