@@ -1,16 +1,34 @@
 {
-  "date": "2026-08-27",
+  "date": "2026-08-28",
   "theme": "每日英语进阶",
-  "group": 120,
+  "group": 121,
   "words": [
     {
-      "en": "milestone",
-      "phonetic": "/ˈmaɪlstoʊn/",
+      "en": "feedback",
+      "phonetic": "/ˈfiːdbæk/",
       "pos": "n.",
-      "meaning": "里程碑；重大事件",
-      "example": "This is a major milestone for us.",
-      "example_zh": "这是我们的一个重要里程碑。",
-      "tip": "mile+stone → 里程标志"
+      "meaning": "反馈；意见",
+      "example": "Please give me your feedback.",
+      "example_zh": "请给我你的反馈。",
+      "tip": "feed+back → 喂养回来的信息"
+    },
+    {
+      "en": "efficient",
+      "phonetic": "/ɪˈfɪʃənt/",
+      "pos": "adj.",
+      "meaning": "高效的；有效率的",
+      "example": "This is an efficient solution.",
+      "example_zh": "这是一个高效的解决方案。",
+      "tip": "effect+ient → 有效果的"
+    },
+    {
+      "en": "strategic",
+      "phonetic": "/strəˈtiːdʒɪk/",
+      "pos": "adj.",
+      "meaning": "战略性的；策略的",
+      "example": "This is a strategic decision.",
+      "example_zh": "这是一个战略性的决定。",
+      "tip": "strategy的形容词形式"
     },
     {
       "en": "prioritize",
@@ -22,31 +40,13 @@
       "tip": "priority+ize → 使成为优先"
     },
     {
-      "en": "feedback",
-      "phonetic": "/ˈfiːdbæk/",
+      "en": "milestone",
+      "phonetic": "/ˈmaɪlstoʊn/",
       "pos": "n.",
-      "meaning": "反馈；意见",
-      "example": "Please give me your feedback.",
-      "example_zh": "请给我你的反馈。",
-      "tip": "feed+back → 喂养回来的信息"
-    },
-    {
-      "en": "versatile",
-      "phonetic": "/ˈvɜːrsətaɪl/",
-      "pos": "adj.",
-      "meaning": "多才多艺的；多功能的",
-      "example": "She is a versatile actress.",
-      "example_zh": "她是一位多才多艺的女演员。",
-      "tip": "谐音：玩色太哦 → 玩转各种颜色 → 多才多艺"
-    },
-    {
-      "en": "strategic",
-      "phonetic": "/strəˈtiːdʒɪk/",
-      "pos": "adj.",
-      "meaning": "战略性的；策略的",
-      "example": "This is a strategic decision.",
-      "example_zh": "这是一个战略性的决定。",
-      "tip": "strategy的形容词形式"
+      "meaning": "里程碑；重大事件",
+      "example": "This is a major milestone for us.",
+      "example_zh": "这是我们的一个重要里程碑。",
+      "tip": "mile+stone → 里程标志"
     }
   ]
 }
