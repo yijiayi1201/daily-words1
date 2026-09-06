@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-05",
+  "date": "2026-09-06",
   "theme": "每日英语进阶",
-  "group": 130,
+  "group": 131,
   "words": [
     {
       "en": "optimize",
@@ -13,40 +13,40 @@
       "tip": "optim(最好)+ize → 使最好"
     },
     {
-      "en": "versatile",
-      "phonetic": "/ˈvɜːrsətaɪl/",
-      "pos": "adj.",
-      "meaning": "多才多艺的；多功能的",
-      "example": "She is a versatile actress.",
-      "example_zh": "她是一位多才多艺的女演员。",
-      "tip": "谐音：玩色太哦 → 玩转各种颜色 → 多才多艺"
+      "en": "collaborate",
+      "phonetic": "/kəˈlæbəreɪt/",
+      "pos": "v.",
+      "meaning": "合作；协作",
+      "example": "We collaborate with partners worldwide.",
+      "example_zh": "我们与全球伙伴合作。",
+      "tip": "col+labor+ate → 一起劳动"
     },
     {
-      "en": "strategic",
-      "phonetic": "/strəˈtiːdʒɪk/",
+      "en": "sustainable",
+      "phonetic": "/səˈsteɪnəbl/",
       "pos": "adj.",
-      "meaning": "战略性的；策略的",
-      "example": "This is a strategic decision.",
-      "example_zh": "这是一个战略性的决定。",
-      "tip": "strategy的形容词形式"
+      "meaning": "可持续的",
+      "example": "We need sustainable development.",
+      "example_zh": "我们需要可持续发展。",
+      "tip": "sustain+able → 可以维持的"
     },
     {
-      "en": "proactive",
-      "phonetic": "/proʊˈæktɪv/",
-      "pos": "adj.",
-      "meaning": "主动的；积极前瞻的",
-      "example": "Be proactive in solving problems.",
-      "example_zh": "主动解决问题。",
-      "tip": "pro+active → 提前行动的"
+      "en": "innovate",
+      "phonetic": "/ˈɪnəveɪt/",
+      "pos": "v.",
+      "meaning": "创新；革新",
+      "example": "We need to innovate to stay competitive.",
+      "example_zh": "我们需要创新以保持竞争力。",
+      "tip": "in+nov(新)+ate → 引入新的"
     },
     {
-      "en": "feedback",
-      "phonetic": "/ˈfiːdbæk/",
-      "pos": "n.",
-      "meaning": "反馈；意见",
-      "example": "Please give me your feedback.",
-      "example_zh": "请给我你的反馈。",
-      "tip": "feed+back → 喂养回来的信息"
+      "en": "benchmark",
+      "phonetic": "/ˈbentʃmɑːrk/",
+      "pos": "n./v.",
+      "meaning": "基准；标准；用基准衡量",
+      "example": "We use this as our benchmark.",
+      "example_zh": "我们用这个作为基准。",
+      "tip": "bench+mark → 长凳上的刻度"
     }
   ]
 }
