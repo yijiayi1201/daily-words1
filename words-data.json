@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-27",
+  "date": "2026-09-28",
   "theme": "每日英语进阶",
-  "group": 151,
+  "group": 152,
   "words": [
     {
       "en": "strategic",
@@ -13,33 +13,6 @@
       "tip": "strategy的形容词形式"
     },
     {
-      "en": "efficient",
-      "phonetic": "/ɪˈfɪʃənt/",
-      "pos": "adj.",
-      "meaning": "高效的；有效率的",
-      "example": "This is an efficient solution.",
-      "example_zh": "这是一个高效的解决方案。",
-      "tip": "effect+ient → 有效果的"
-    },
-    {
-      "en": "prioritize",
-      "phonetic": "/praɪˈɔːrɪtaɪz/",
-      "pos": "v.",
-      "meaning": "优先处理；给...排序",
-      "example": "We need to prioritize tasks.",
-      "example_zh": "我们需要对任务进行优先级排序。",
-      "tip": "priority+ize → 使成为优先"
-    },
-    {
-      "en": "versatile",
-      "phonetic": "/ˈvɜːrsətaɪl/",
-      "pos": "adj.",
-      "meaning": "多才多艺的；多功能的",
-      "example": "She is a versatile actress.",
-      "example_zh": "她是一位多才多艺的女演员。",
-      "tip": "谐音：玩色太哦 → 玩转各种颜色 → 多才多艺"
-    },
-    {
       "en": "delegate",
       "phonetic": "/ˈdelɪɡeɪt/",
       "pos": "v.",
@@ -47,6 +20,33 @@
       "example": "Good managers know how to delegate.",
       "example_zh": "好的管理者知道如何授权。",
       "tip": "de+leg+ate → 选出代表"
+    },
+    {
+      "en": "collaborate",
+      "phonetic": "/kəˈlæbəreɪt/",
+      "pos": "v.",
+      "meaning": "合作；协作",
+      "example": "We collaborate with partners worldwide.",
+      "example_zh": "我们与全球伙伴合作。",
+      "tip": "col+labor+ate → 一起劳动"
+    },
+    {
+      "en": "sustainable",
+      "phonetic": "/səˈsteɪnəbl/",
+      "pos": "adj.",
+      "meaning": "可持续的",
+      "example": "We need sustainable development.",
+      "example_zh": "我们需要可持续发展。",
+      "tip": "sustain+able → 可以维持的"
+    },
+    {
+      "en": "innovate",
+      "phonetic": "/ˈɪnəveɪt/",
+      "pos": "v.",
+      "meaning": "创新；革新",
+      "example": "We need to innovate to stay competitive.",
+      "example_zh": "我们需要创新以保持竞争力。",
+      "tip": "in+nov(新)+ate → 引入新的"
     }
   ]
 }
